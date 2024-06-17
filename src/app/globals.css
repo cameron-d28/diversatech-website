@@ -68,7 +68,6 @@ body {
   @apply flex 
     flex-col
     relative 
-    bg-red-600 
     h-96 
     min-w-96
     rounded-lg 
@@ -88,7 +87,6 @@ body {
     from-white 
     to-light-blue 
     opacity-100 
-    rounded-lg 
     hover:opacity-0 
     transition-opacity 
     duration-300;

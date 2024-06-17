@@ -10,8 +10,17 @@ const ProjectPage = () => {
       </p>
       <div className="projects-scroll">
         {projects.technical.map((project) => (
-          <div className="project-inner-scroll" key={project.company}>
-            <div className={`projects-image-overlay to-${project.color}`}>
+          <div
+            className={`project-inner-scroll `}
+            style={{ borderColor: project.color, borderWidth: 2 }}
+            key={project.company}
+          >
+            <div
+              className={`projects-image-overlay`}
+              style={{
+                background: `radial-gradient(circle, #ADD8E6, ${project.color})`,
+              }}
+            >
               <Image
                 src={project.image}
                 alt="Overlay"
@@ -25,13 +34,13 @@ const ProjectPage = () => {
             </p>
             <div className="flex flex-col grow justify-between text-lg">
               <p>
-                <u>Company Description:</u> {project.company_description}
+                <u>Company:</u> {project.company_description}
               </p>
               <p>
-                <u>Project Description:</u> {project.project_description}
+                <u>Project:</u> {project.project_description}
               </p>
               <p>
-                <u>Technologies Used:</u> {project.tech.join(", ")}
+                <u>Tech Stack:</u> {project.tech.join(", ")}
               </p>
             </div>
           </div>
@@ -40,8 +49,17 @@ const ProjectPage = () => {
 
       <div className="projects-scroll">
         {projects.consulting.map((project) => (
-          <div className="project-inner-scroll" key={project.company}>
-            <div className="projects-image-overlay">
+          <div
+            className="project-inner-scroll"
+            style={{ borderColor: project.color, borderWidth: 2 }}
+            key={project.company}
+          >
+            <div
+              className="projects-image-overlay"
+              style={{
+                background: `radial-gradient(circle, #ADD8E6, ${project.color})`,
+              }}
+            >
               <Image
                 src={project.image}
                 alt="Overlay"

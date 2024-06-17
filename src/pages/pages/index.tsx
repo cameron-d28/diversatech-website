@@ -13,18 +13,26 @@ import { useRouter } from "next/router";
 const Pages = () => {
   const router = useRouter();
   const { page } = router.query;
-  const [c_page, setPage] = useState<pages_types | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [c_page, setPage] = useState<pages_types | null>(page as pages_types);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    console.log("page is", page);
     if (page) {
       setPage(page as pages_types);
       setLoading(false);
+    } else {
+      console.log("loading");
+      setLoading(true);
     }
   }, [page]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
   }
 
   const handleChange = (n_page: pages_types) => {

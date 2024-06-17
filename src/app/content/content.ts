@@ -27,9 +27,9 @@ export const projects = {
       color: "#01126b",
       image: "/instahub.png",
       company_description:
-        "Instahub works to automate detection of energy waste using AI",
+        "Instahub works to automate detection of energy waste within buildings.",
       project_description:
-        "Helped build out their internal dashboard for detecting patterns within energy usage.",
+        "Built out their internal dashboard for detecting patterns within energy usage.",
       tech: ["SQL", "AWS", "React", "Tailwind CSS"],
     },
     {
@@ -37,10 +37,10 @@ export const projects = {
       color: "white",
       image: "/resilience_education_logo.svg",
       company_description:
-        "Resilience Education partner with leading business schools to teach our business curriculum to incarcerated learners then support them post-release with professional support",
+        "Resilience Education partner with leading business schools to teach business curriculum to formerly incarcerated individuals.",
       project_description:
-        "Helped transition an outdated excel system to a new searchable databse on job oppourtunites for formerly incarcerated individuals",
-      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+        "Transitioned a legacy excel system to a new searchable database on job oppourtunites for formerly incarcerated individuals",
+      tech: ["Next", "Node", "MongoDB", "Tailwind CSS"],
     },
     {
       company: "Shades",
@@ -85,7 +85,7 @@ export const projects = {
     },
     {
       company: "SnackPass",
-      color: "#0052ff",
+      color: "#05befe",
       image: "/snackpass.png",
       company_description:
         "Snackpass makes ordering at local restaurants more convenient, affordable and fun with friends.",

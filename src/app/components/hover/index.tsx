@@ -14,9 +14,6 @@ interface HoverProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Hover = ({ color, page, bottomContent, arrow, ...rest }: HoverProps) => {
   const router = useRouter();
-  console.log(descriptions);
-  console.log(pages);
-  console.log(page);
   return (
     <div
       className={`w-full h-full z-10
