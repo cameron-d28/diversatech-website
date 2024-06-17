@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Hover from "./components/hover";
-import DownArrow from "./components/hover/downarrow";
 import { pages } from "./content/content";
 
 export default function Home() {
