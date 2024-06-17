@@ -1,0 +1,27 @@
+{
+  "technical": [
+    {
+      "company": "InstaHub",
+      "image": "instahub.png",
+      "company_description": "Instahub works to automate detection of energy waste using AI",
+      "project_description": "Helped build out their internal dashboard for detecting patterns within energy usage.",
+      "tech": ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"]
+    },
+    {
+      "company": "Penn",
+      "image": "penn.png",
+      "company_description": "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
+      "project_description": "Helped build out their internal dashboard for detecting patterns within energy usage.",
+      "tech": ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"]
+    }
+  ],
+  "consulting": [
+    {
+      "company": "CoinBase",
+      "image": "coinbase.svg",
+      "company_description": "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
+      "project_description": "Helped build out their internal dashboard for detecting patterns within energy usage.",
+      "tech": ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"]
+    }
+  ]
+}
