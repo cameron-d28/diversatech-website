@@ -6,7 +6,7 @@ export default function Home() {
   const colors = ["blue", "black", "red", "orange", "purple"];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-24 lg:pb-24 lg:px-24 ">
       <div className="z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           If interested in technology
@@ -22,32 +22,34 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="hover-scroll px-8 overflow-y-auto">
+      <div className="hover-scroll px-2 lg:px-8 overflow-y-auto">
+        {/* should reveal a scroll down message */}
         <Hover color="transparent" page="DiversaTech" arrow={true} />
-
-        {/* add a down error below this */}
-        {pages.map((page, i) => {
-          const colorClasses = [
-            "dark-orange",
-            "light-orange",
-            "light-blue",
-            "medium-blue",
-            "bg-dark-blue",
-            "bg-white",
-          ];
-          const bgColorClass = colorClasses[i] || "bg-white";
-          return (
-            <Hover
-              key={i}
-              color={bgColorClass}
-              page={page}
-              bottomContent={true}
-            />
-          );
-        })}
+        <div className="hidden lg:block">
+          {/* add a down error below this */}
+          {pages.map((page, i) => {
+            const colorClasses = [
+              "dark-orange",
+              "light-orange",
+              "light-blue",
+              "medium-blue",
+              "bg-dark-blue",
+              "bg-white",
+            ];
+            const bgColorClass = colorClasses[i] || "bg-white";
+            return (
+              <Hover
+                key={i}
+                color={bgColorClass}
+                page={page}
+                bottomContent={true}
+              />
+            );
+          })}
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-5 lg:text-left">
+      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left">
         {pages.map((page, i) => {
           return (
             <Link

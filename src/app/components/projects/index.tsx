@@ -22,7 +22,7 @@ const ProjectPage = () => {
               }}
             >
               <Image
-                src={project.image}
+                src={`/icons${project.image}`}
                 alt="Overlay"
                 width={100}
                 height={100}

@@ -16,9 +16,7 @@ const Hover = ({ color, page, bottomContent, arrow, ...rest }: HoverProps) => {
   const router = useRouter();
   return (
     <div
-      className={`w-full h-full z-10
-      mb-8 py-8 px-4 space-y-8 
-      rounded-xl
+      className={`hover-content
       ${
         page !== "DiversaTech"
           ? `hover:translate-y-2
@@ -31,11 +29,11 @@ const Hover = ({ color, page, bottomContent, arrow, ...rest }: HoverProps) => {
       onClick={() => router.push(`/pages?page=${page}`)}
       {...rest}
     >
-      <p className="text-7xl">{page}</p>
+      <p className="text-4xl  lg:text-7xl">{page}</p>
       {/* Our goal is to change
         the ownership of consultancy. */}
       {descriptions && (
-        <p className="text-3xl mt-4">
+        <p className="text-lg lg:text-3xl mt-4">
           {descriptions[page as keyof typeof descriptions]}
         </p>
       )}
