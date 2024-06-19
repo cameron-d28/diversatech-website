@@ -40,22 +40,30 @@ const Pages = () => {
   };
 
   return (
-    <main className="flex flex-row min-h-screen pb-10">
-      <div className="w-[25%]">
+    <main className="flex flex-col lg:flex-row min-h-screen lg:pb-10">
+      <div className="w-full text-center lg:w-[25%] lg:pl-6 lg:text-left">
         <div onClick={() => router.push("/")}>
-          <p>home</p>
+          <p className="text-2xl">home</p>
         </div>
         {pages.map((page, i) => {
           return (
             <div onClick={() => handleChange(page)} key={i}>
-              <p>{page}</p>
+              <p
+                className={`text-2xl hover:underline ${
+                  c_page === page ? "underline" : ""
+                }`}
+              >
+                {page}
+              </p>
             </div>
           );
         })}
       </div>
 
-      <div className="w-[75%] px-5">
-        <p className="w-full text-7xl text-center py-10">{c_page}</p>
+      <div className="w-full lg:w-[75%] px-5">
+        <p className="w-full text-4xl italic font-bold lg:text-7xl text-center py-10">
+          {c_page}
+        </p>
         {(() => {
           switch (c_page) {
             case pages_types.organization:

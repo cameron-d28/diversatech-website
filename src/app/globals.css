@@ -113,3 +113,9 @@ body {
   @apply text-xl
   text-center;
 }
+
+.pages-container {
+  @apply flex
+  /* items-center */
+  justify-center;
+}

@@ -6,7 +6,8 @@ const ProjectPage = () => {
     <main>
       <p>
         We have worked with a multitude of companies to build out their tech
-        stacks
+        stacks and help them think about their future. Hover over them to see
+        more details
       </p>
       <div className="projects-scroll">
         {projects.technical.map((project) => (
@@ -61,7 +62,7 @@ const ProjectPage = () => {
               }}
             >
               <Image
-                src={project.image}
+                src={`/icons${project.image}`}
                 alt="Overlay"
                 width={100}
                 height={100}
