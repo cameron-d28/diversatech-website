@@ -33,6 +33,7 @@ body {
 .hover-scroll {
   @apply relative
     h-[25vh]
+    md:h-[40vh]
     lg:h-[40vh]
     w-full
     border-gray-900

@@ -3,8 +3,6 @@ import Hover from "./components/hover";
 import { pages } from "./content/content";
 
 export default function Home() {
-  const colors = ["blue", "black", "red", "orange", "purple"];
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-24 lg:pb-24 lg:px-24 ">
       <div className="z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
@@ -25,26 +23,10 @@ export default function Home() {
       <div className="hover-scroll px-2 lg:px-8 overflow-y-auto">
         {/* should reveal a scroll down message */}
         <Hover color="transparent" page="DiversaTech" arrow={true} />
-        <div className="hidden lg:block">
+        <div className="hidden md:block lg:block">
           {/* add a down error below this */}
           {pages.map((page, i) => {
-            const colorClasses = [
-              "dark-orange",
-              "light-orange",
-              "light-blue",
-              "medium-blue",
-              "bg-dark-blue",
-              "bg-white",
-            ];
-            const bgColorClass = colorClasses[i] || "bg-white";
-            return (
-              <Hover
-                key={i}
-                color={bgColorClass}
-                page={page}
-                bottomContent={true}
-              />
-            );
+            return <Hover key={i} page={page} bottomContent={true} />;
           })}
         </div>
       </div>
@@ -59,7 +41,7 @@ export default function Home() {
                   page,
                 },
               }}
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-light-orange hover:bg-gray-500"
+              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-light-orange hover:bg-light-blue"
               replace={true}
               key={i}
             >

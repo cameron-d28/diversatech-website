@@ -6,13 +6,12 @@ import DownArrow from "./downarrow";
 import { descriptions, pages } from "@/app/content/content";
 
 interface HoverProps extends React.HTMLAttributes<HTMLDivElement> {
-  color: string;
   page: string;
   arrow?: boolean;
   bottomContent?: boolean;
 }
 
-const Hover = ({ color, page, bottomContent, arrow, ...rest }: HoverProps) => {
+const Hover = ({ page, bottomContent, arrow, ...rest }: HoverProps) => {
   const router = useRouter();
   return (
     <div
