@@ -34,7 +34,7 @@ const OrganizationPage = () => {
             engineering. Groups meet on a monthly basis while project teams meet
             on a weekly basis.
           </p>
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4">
             <div className="flex flex-col p-4 bg-gray-100 rounded-2xl space-y-3">
               <p className="organization-content text-center">Consultancy</p>
               <p className="organization-content">

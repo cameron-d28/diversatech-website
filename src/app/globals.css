@@ -66,14 +66,22 @@ body {
 }
 
 .projects-scroll {
-  @apply flex 
+  @apply grid
+  grid-cols-1
+  gap-2
+  md:grid-cols-2
+  md:gap-2
+  2xl:grid-cols-3
+  2xl:gap-4;
+
+  /* flex 
     flex-row
     snap-x
     overflow-x-scroll 
     w-full 
     space-x-4 
     p-4 
-    scroll-smooth;
+    scroll-smooth; */
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
@@ -83,7 +91,6 @@ body {
     flex-col
     relative 
     h-96 
-    min-w-96
     rounded-lg 
     shadow-lg 
     p-4 

@@ -5,3 +5,8 @@ export enum pages_types {
   "apply" = "apply",
   "contact" = "contact",
 }
+
+export enum project_types {
+  "tech" = "techinical",
+  "consult" = "consulting",
+}

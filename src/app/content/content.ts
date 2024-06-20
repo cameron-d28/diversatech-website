@@ -1,4 +1,5 @@
 import { pages_types } from "../types";
+import { project_types } from "../types";
 
 export const pages: pages_types[] = [
   pages_types.projects,
@@ -20,101 +21,108 @@ export const descriptions = {
   [pages_types.contact]: "We are always happy to chat!",
 };
 
-export const projects = {
-  technical: [
-    {
-      company: "InstaHub",
-      color: "#01126b",
-      image: "/instahub.png",
-      company_description:
-        "Instahub works to automate detection of energy waste within buildings.",
-      project_description:
-        "Built out their internal dashboard for detecting patterns within energy usage.",
-      tech: ["SQL", "AWS", "React", "Tailwind CSS"],
-    },
-    {
-      company: "Resilience Education",
-      color: "white",
-      image: "/resilience_education_logo.svg",
-      company_description:
-        "Resilience Education partner with leading business schools to teach business curriculum to formerly incarcerated individuals.",
-      project_description:
-        "Transitioned a legacy excel system to a new searchable database on job oppourtunites for formerly incarcerated individuals",
-      tech: ["Next", "Node", "MongoDB", "Tailwind CSS"],
-    },
-    {
-      company: "Shades",
-      color: "#ff334e",
-      image: "/shades.svg",
-      company_description:
-        "Shades helps inviduals stay informed by providing them with news from every multiple perspectives",
-      project_description:
-        "Created a google extension that notified users of related existing shades articles when browsing the internet",
-      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    },
-    // {
-    //   company: "Penn",
-    //   image: "/coinbase.svg",
-    //   company_description:
-    //     "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
-    //   project_description:
-    //     "Helped build out their internal dashboard for detecting patterns within energy usage.",
-    //   tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    // },
-  ],
-  consulting: [
-    {
-      company: "CoinBase",
-      color: "#0052ff",
-      image: "/coinbase.svg",
-      company_description:
-        "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
-      project_description:
-        "Helped build out their internal dashboard for detecting patterns within energy usage.",
-      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    },
-    {
-      company: "ChargeItSpot",
-      color: "white",
-      image: "/chargeitspot.png",
-      company_description:
-        "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
-      project_description:
-        "Helped build out their internal dashboard for detecting patterns within energy usage.",
-      sectors: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    },
-    {
-      company: "SnackPass",
-      color: "#05befe",
-      image: "/snackpass.png",
-      company_description:
-        "Snackpass makes ordering at local restaurants more convenient, affordable and fun with friends.",
-      project_description:
-        "Helped do research on the user experience and how to increase their user conversion.",
-      sectors: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    },
-    {
-      company: "Stimulus",
-      color: "#1f6d35",
-      image: "/stimulus.png",
-      company_description:
-        "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
-      project_description:
-        "Helped build out their internal dashboard for detecting patterns within energy usage.",
-      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    },
-    {
-      company: "Betterly",
-      color: "#3ebb83",
-      image: "/betterly.svg",
-      company_description:
-        "Penn is a platform for students to learn and succeed. We built out the frontend and backend for the website.",
-      project_description:
-        "Helped build out their internal dashboard for detecting patterns within energy usage.",
-      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    },
-  ],
-};
+export const projects = [
+  {
+    company: "Baseten",
+    color: "#009959",
+    image: "/baseten.svg",
+    semsester: "Fall 2022",
+    company_description:
+      "Baseten offers the most flexible way to serve AI models in production.",
+    project_description:
+      "Created go to market strategies on six AI-related public events.",
+    type: project_types.consult,
+  },
+  {
+    company: "CoinBase",
+    color: "#0052ff",
+    image: "/coinbase.svg",
+    semsester: "Fall 2022",
+    company_description:
+      "Coinbase aims to increase economic freedom in the world.",
+    project_description:
+      "Research on the product offering & user acquisition strategies of competitors in international markets.",
+    type: project_types.consult,
+  },
+  {
+    company: "Shades",
+    color: "#000000",
+    secondary_color: "#ff334e",
+    image: "/shades.svg",
+    company_description:
+      "Shades curates multiple perspectives on the issues of the day.",
+    project_description:
+      "Created a chrome extension that notified users of related shades articles when browsing the internet",
+    tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    type: project_types.tech,
+  },
+  {
+    company: "Resilience Education",
+    color: "white",
+    image: "/resilience_education_logo.svg",
+    semester: "Fall 2022",
+    company_description:
+      "Resilience Education aims to stop cycles of incarceration by improving economic mobility.",
+    project_description:
+      "Transitioned a legacy excel system to a new searchable database on job oppourtunites for formerly incarcerated individuals",
+    tech: ["Next", "Node", "MongoDB", "Tailwind CSS"],
+    type: project_types.tech,
+  },
+  {
+    company: "SnackPass",
+    color: "#05befe",
+    image: "/snackpass.png",
+    company_description:
+      "Snackpass makes ordering at local restaurants more convenient, affordable and fun with friends.",
+    project_description:
+      "Helped do research on the user experience and how to increase their user conversion.",
+    type: project_types.consult,
+  },
+  {
+    company: "Betterly",
+    color: "#3ebb83",
+    image: "/betterly.svg",
+    company_description:
+      "Betterly works with global corperations to improve their marketing success.",
+    project_description:
+      "Explored the advantages of contract workers in the marketing domain.",
+    type: project_types.consult,
+  },
+  {
+    company: "Stimulus",
+    color: "#1f6d35",
+    image: "/stimulus.png",
+    company_description:
+      "Stimulus uses data & analytics to help companies make better purchasing decisions powered by AI.",
+    project_description:
+      "Explored possible partnerships, new sources of data, and new business models.",
+    type: project_types.consult,
+  },
+  {
+    company: "InstaHub",
+    color: "#01126b",
+    image: "/instahub.png",
+    semester: "Spring 2023",
+    company_description:
+      "Instahub works to automate detection of energy waste within buildings.",
+    project_description:
+      "Built out their internal dashboard for detecting patterns within energy usage.",
+    tech: ["SQL", "AWS", "React", "Tailwind CSS"],
+    type: project_types.tech,
+  },
+  {
+    company: "ChargeItSpot",
+    color: "white",
+    image: "/chargeitspot.png",
+    semester: "Fall 2022",
+    company_description:
+      "ChargeItSpot has revolutionized the world of mobile device management, charging, and security.",
+    project_description:
+      "Identify new sales venues as well as the key characteristics that distinguish venues.",
+    sectors: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    type: project_types.consult,
+  },
+];
 
 export const organization = {
   about:

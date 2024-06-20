@@ -40,7 +40,7 @@ const Pages = () => {
   };
 
   return (
-    <main className="flex flex-col lg:flex-row min-h-screen lg:pb-10">
+    <main className="flex flex-col w-full lg:flex-row min-h-screen lg:pb-10">
       <div className="w-full text-center lg:w-[25%] lg:pl-6 lg:text-left">
         <div onClick={() => router.push("/")}>
           <p className="text-2xl">home</p>
