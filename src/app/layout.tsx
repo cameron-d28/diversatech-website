@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/icons/logo.png",
+        url: "/icons/logo.jgp",
         width: 200,
         height: 200,
         alt: "logo",
@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <head>
+        <link rel="icon" href="/icons/logo.jgp" sizes="any" />
+      </head> */}
       <body>{children}</body>
     </html>
   );

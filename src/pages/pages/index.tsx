@@ -43,7 +43,7 @@ const Pages = () => {
     <main className="flex flex-col w-full lg:flex-row min-h-screen lg:pb-10">
       <div className="w-full text-center lg:w-[25%] lg:pl-6 lg:text-left">
         <div onClick={() => router.push("/")}>
-          <p className="text-2xl">home</p>
+          <p className="text-2xl hover:underline">home</p>
         </div>
         {pages.map((page, i) => {
           return (
