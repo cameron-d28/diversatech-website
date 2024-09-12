@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <head>
+      <head>
         <link rel="icon" href="/icons/logo.jgp" sizes="any" />
-      </head> */}
+      </head>
       <body>{children}</body>
     </html>
   );
