@@ -1,4 +1,4 @@
-## Diversatechs' Website. It will be updated overtime.
+## [Diversatechs' Website](https://diversatech-website.vercel.app/). It will be updated overtime.
 
 #### The club aims to help companies of all size 1) alleviate technical debt or 2) explore upcoming markets/products. It is run by undergraduate students at the University of Pennsylvania.
 
