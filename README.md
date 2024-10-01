@@ -1,6 +1,6 @@
 ## Diversatechs' Website. It will be updated overtime.
 
-# The club aims to help companies of all size allieviate technical debt or explore upcoming markets/products. It is run by undergraduate students at the University of Pennsylvania.
+#### The club aims to help companies of all size 1) alleviate technical debt or 2) explore upcoming markets/products. It is run by undergraduate students at the University of Pennsylvania.
 
 <br />
 <br />
