@@ -1,3 +1,19 @@
+## [Diversatechs' Website](https://diversatech-website.vercel.app/). It will be updated overtime.
+
+#### The club aims to help companies of all size 1) alleviate technical debt or 2) explore upcoming markets/products. It is run by undergraduate students at the University of Pennsylvania.
+
+<br />
+<br />
+- developed by cameron d
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
