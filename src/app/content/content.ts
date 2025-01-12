@@ -126,9 +126,9 @@ export const projects = [
 
 export const organization = {
   about:
-    "Diverstatech was founded in 2022 by Victoria Zammit and Shriya Shah with the goal of providing companies with technical consulting. Over the past few years the organization has provided companies with not just consulting but technical support.",
+    "Diverstatech was founded in 2022 by Victoria Zammit and Shriya Shah with the goal of providing companies with technical consulting. In 2023-2024 it was later scaled by Cameron Davis to become a solutions, rather than product, focused firm. Over the past few years the organization has provided companies with not just consulting but technical support.",
   mission:
-    "Introduce passionate and curious students of all backgrounds to the realm of technology",
+    "Introduce passionate and curious students of all backgrounds to the realm of technology. We aspire to be a training ground for those that want to make a difference with technology.",
   procceses: [
     "building out full-stack dashboards and applications",
     "research on product market fit and new markets",
